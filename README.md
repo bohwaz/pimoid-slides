@@ -1,4 +1,4 @@
-Please note that this is just a mirror of the ZIP file available at [pimoid.fr](https://pimoid.fr/)
+Please note that this is just a mirror of the ZIP file available at [slides.pimoid.fr](https://slides.pimoid.fr/details/)
 
 I did not develop this software.
 
