@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-size: 0;
+	min-height: 100%;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+.content {
+	background-color: #111;
+	max-width: 1000px;
+}
+
+p {
+	margin-top: 20px;
+}
+
+a {
+  outline: none;
+	color: lightgray;
+}
+
+a:hover {
+	color: white;
+}
+
+h2 {
+	padding: 0px 4px;
+}
+
+.logo {
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	height: 60px;
+	z-index: 10;
+}
+
+.logo-img {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.no-display {
+	display: none;
+}
+
+.redifs-pan {
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 100%;
+}
+
+.redifs-title {
+	color: white;
+	padding: 10px 10px 25px 10px;
+}
+
+.description {
+	font-size: medium;
+	color: white;
+	padding-bottom: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+.title-main {
+	font-size: x-large;
+	text-align: center;
+}
+
+.title-path {
+	font-size: medium;
+	color: lightgray;
+}
+
+.redifs-box {
+	display: flex;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.redif-box {
+	background-color: #303030;
+  background-size: cover;
+  background-position: center;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+  height: 250px;
+	text-align: center;
+  transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  backface-visibility: hidden;
+}
+
+.redif-box:hover {
+  transform: scale(1.05) perspective(1px);
+}
+
+.redif-box-text {
+	font-size: medium;
+	color: white;
+	padding-top: 15px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+  border-radius: 10px 10px 0 0;
+}
+
+.redif-box-link {
+	flex-basis: 400px;
+	flex-shrink: 1;
+  text-decoration: none;
+}
+
+.redif-box-gradient {
+  padding: 30px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0));
+}
+
+.redif-date {
+	color: black;
+}
+
+.redif-link-box {
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+.redif-link {
+	background-color: lightgrey;
+	color: black;
+	padding: 15px;
+}
+
+.redif-link:link, .redif-link:visited {
+	border-radius: 10px;
+}
+
+.redif-link:hover, .redif-link:active {
+	background-color: white;
+}
+
+.text {
+	font-size: medium;
+	color: white;
+}

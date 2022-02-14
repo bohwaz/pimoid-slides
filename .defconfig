@@ -1,0 +1,48 @@
+# This file contains the documentation about the build options
+
+# Quality of the JPEG images generated for miniature slides (integer form 1 to
+#		100, 100 is the best)
+def_value MINIATURES_QUALITY 50
+
+# Path to the presentations directory (path that can be relative to the
+#		Makefile)
+def_value DATA_DIR data
+
+# Path to the output build directory (path that can be relative to the Makefile)
+def_value BUILD_DIR build
+
+# Build type (debug or release)
+def_value BUILD_TYPE debug
+
+# If false, remove commands output and suppress some other lines (true or false)
+def_value BUILD_VERBOSE "false"
+
+# Build source code archive (true or false)
+if [ -d ".git" ]; then
+	def_value SOURCE_ARCHIVE "true"
+else
+	def_value SOURCE_ARCHIVE "false" "source code archive disabled (this is not a git repository)"
+fi
+
+# Enable HTML minifing with htmlmin (true or false)
+if hash htmlmin 2> /dev/null; then
+	def_value HTML_MINIFY "true"
+else
+	def_value HTML_MINIFY "false" "HTML minifing disabled (htmlmin not found)"
+fi
+
+# Terser binary name (name or path that can be relative to the Makefile)
+if hash terser 2> /dev/null; then
+	def_value TERSER_NAME "terser"
+elif hash uglifyjs.terser 2> /dev/null; then
+	def_value TERSER_NAME "uglifyjs.terser"
+else
+	def_value TERSER_NAME "terser"
+fi
+
+# Enable JavaScript minifing with terser (true or false)
+if hash "$TERSER_NAME" 2> /dev/null; then
+	def_value JAVASCRIPT_MINIFY "true"
+else
+	def_value JAVASCRIPT_MINIFY "false" "JavaScript minifing disabled (terser not found)"
+fi

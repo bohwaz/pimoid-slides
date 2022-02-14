@@ -1,0 +1,151 @@
+* {
+	color: #eee;
+	margin: 0;
+	padding: 0;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	box-sizing:border-box;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+  outline: none;
+	color: lightgray;
+}
+
+a:hover {
+	color: white;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	background-color: #111;
+	max-width: 960px;
+	padding: 0 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.title {
+	color: white;
+	padding: 10px 0px 25px 0px;
+}
+
+
+.title-main {
+	font-size: x-large;
+	text-align: center;
+}
+
+.title-path {
+	font-size: medium;
+	color: lightgray;
+}
+
+h2 {
+	padding-bottom: 10px;
+}
+
+h3 {
+	padding-bottom: 6px;
+}
+
+p {
+	text-align: justify;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+ul {
+	padding-bottom: 5px;
+	padding-left: 30px;
+}
+
+li {
+	padding-bottom: 5px;
+	text-align: justify;
+}
+
+
+/* # Comparison */
+/* ## Visual comparison */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 10px;
+}
+
+.column {
+	max-width: 440px;
+	flex-basis: 100%; /* Make columns the same width */
+	border: 2px solid #333;
+	text-align: center;
+}
+
+.comp_img {
+	max-width: 80%;
+	border: 1px solid #ccc;
+	margin: 5px;
+}
+
+.comp_img_desc {
+	text-align: center;
+	padding: 5px;
+}
+
+/* ## Data comparison */
+.comp_data_section {
+	padding-bottom: 8px;
+}
+
+.comp_data_bar {
+  text-align: right;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  color: white;
+}
+
+.comp_yt {width: 90%; background-color: #f00;}
+.comp_sssc {width: 43%; background-color: #f60;}
+.comp_pimoid {
+	width: 9%;
+	background-color: #2196F3;
+	display: inline-block;
+}
+
+.comp_data_graph {
+	border: 2px solid #333;
+	margin: 10px;
+	padding-top: 10px;
+}
+
+.comp_data_desc {
+	font-weight: bold;
+}
+.size {
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.donate_button {
+	display: block;
+	margin: auto;
+}
+
+.crypto {
+	font-family: monospace;
+	text-align: center;
+	padding-top: 6px;
+}
